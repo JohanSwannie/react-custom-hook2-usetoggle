@@ -33,5 +33,6 @@ button {
 .definition {
   color: #FFF;
   background-color: crimson;
+  text-align: center;
   padding: 1rem;
 }
