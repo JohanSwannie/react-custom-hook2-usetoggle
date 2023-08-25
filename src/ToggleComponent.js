@@ -6,9 +6,9 @@ const ToggleComponent = () => {
   return (
     <div className="toggle-container">
       <h3>Current Boolean Value : {value.toString()}</h3>
-      <button onClick={toggleValue}>Toggle</button>
-      <button onClick={() => toggleValue(true)}>Make True</button>
-      <button onClick={() => toggleValue(false)}>Make False</button>
+      <button onClick={toggleValue}>Toggle Boolean</button>
+      <button onClick={() => toggleValue(true)}>Change to True</button>
+      <button onClick={() => toggleValue(false)}>Change to False</button>
       {value ? (
         <div className="definition">
           <h4>Definition of TRUE</h4>
