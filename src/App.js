@@ -1,5 +1,7 @@
+import ToggleComponent from "./ToggleComponent";
+
 function App() {
-  return <div className="App">Lekker Man</div>;
+  return <ToggleComponent />;
 }
 
 export default App;
