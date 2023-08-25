@@ -11,11 +11,15 @@ const ToggleComponent = () => {
       <button onClick={() => toggleValue(false)}>Make False</button>
       {value ? (
         <div className="definition">
-          Definition of TRUE : in accordance with fact or reality
+          <h4>Definition of TRUE</h4>
+          <br />
+          <h5>In accordance with fact or reality</h5>
         </div>
       ) : (
         <div className="definition">
-          Definition of FALSE : not according with truth or fact; incorrect
+          <h4>Definition of FALSE</h4>
+          <br />
+          <h5>Not according with truth or fact - Incorrect</h5>
         </div>
       )}
     </div>
