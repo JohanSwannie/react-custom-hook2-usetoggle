@@ -4,9 +4,7 @@ const useToggle = (defaultValue) => {
   const [value, setValue] = useState(defaultValue);
 
   const toggleValue = (value) => {
-    setValue((currentValue) =>
-      typeof value === "boolean" ? value : !currentValue
-    );
+    setValue((prevValue) => (typeof value === "boolean" ? value : !prevValue));
   };
 
   return [value, toggleValue];
