@@ -3,8 +3,8 @@ import { useState } from "react";
 const useToggle = (defaultValue) => {
   const [value, setValue] = useState(defaultValue);
 
-  const toggleValue = (value) => {
-    setValue((prevValue) => (typeof value === "boolean" ? value : !prevValue));
+  const toggleValue = (val) => {
+    setValue((prevValue) => (typeof val === "boolean" ? val : !prevValue));
   };
 
   return [value, toggleValue];
